@@ -7,3 +7,5 @@ while True:
     else:
         print('Число отрицательное!', my_list[0:-1])
     break
+
+print('')
