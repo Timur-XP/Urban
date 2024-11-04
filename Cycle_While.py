@@ -1,11 +1,14 @@
-my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
-a = []
-while True:
-    if my_list[6] >= 0:
-        print('Число положительное!', my_list[0:-1])
+my_list = [42, 69, 322, 13, 0, 99, 5, 1, -8, 7, 6, -7]
+sum_ = 0
+while True and sum_ < len(my_list):
+    if my_list[sum_] > 0:
+        print(my_list[sum_], '- число положительное!')
+        sum_ += 1
         continue
-    else:
-        print('Число отрицательное!', my_list[0:-1])
-    break
-
-print('')
+    elif my_list[sum_] >= 0:
+        sum_ += 1
+        continue
+    elif my_list[sum_] < 0:
+        print(my_list[sum_], '- ВНИМАНИЕ, отрицательное число!', )
+        sum_ += 1
+        break
